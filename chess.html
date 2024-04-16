@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>.discordle()</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/92c2b5b560.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <style>
+        body{
+            min-height:100vh;
+            width:100%;
+            background.position: center;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+    <div class ="bar">
+        <div class ="loading"></div>
+    </div>
+    <div class ="header-bg">
+        <div class ="bg"></div>
+    </div>
+
+    <section class ="header">
+        
+        <!-- Navigation menu -->
+
+        <nav>
+            <p href="index">.chess()</p>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index">.home()</a></li>
+                    <li><a href="about" id = "gray">.about()</a></li>
+                    <li><a href="projects" id = "red">.projects()</a></li>
+                    <li><a href="https://github.com/logancalder" target="_blank"><i class="fa-brands fa-github icon-2x" style="font-size: 30px;"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/logan-calder-425a2124a/" target="_blank"><i class="fa-brands fa-linkedin icon-2x" style="font-size: 30px;"></i></a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </section>
+        
+        
+    </section>
+    <div class = "project-page-grid">
+        <h1 class = "project-page-header">.chess<span class = "red">()</h1>
+        <div class = "project-page-description">
+            <ul>
+                <li class ="comment">String lang = "#c";</li>
+                <li class ="comment">// Description</li>
+                <li class = "content"><strong class = "red">Chess</strong> was a project I used to learn <strong class = "light">Unity</strong>, a popular game engine.</li>
+                <li class = "content">This game only allows users to move pieces in <strong class = "light">legal positions</strong>, and will track the location of all pieces on the board.
+                </li>
+                <li class = "content">This game is <strong class = "red"> not</strong> available for public access.</li>
+            </ul>
+            <ul>
+                </br></br><li class ="comment">// Features</li>
+                <li class = "content">This game is not aimed towards being a fully functional chess simulator, but<italic class = "light">a way for me to learn Unity</italic> and the language it uses, <strong class = "red">C#</strong>.</li>
+                </br><li class = "features-list">
+                    <ul>
+                        <li>Movable Pieces</li>
+                        <li>Sound Effects</li>
+                        <li>Highlighted Movable Tiles</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <ul>
+                </br></br><li class ="comment">// Development</li>
+                <li class = "content">I will be very straight-forward about this at the beginning---this project does <strong class = "red">not</strong> test for checks, checkmates, or stalemates. This project was a way for me to <strong class = "light">learn how Unity worked</strong>, and as such I focused more on the aspect of having interactable pieces
+                    and other game aspects, such as sound effects.
+                </li>
+                <li class = "content">I wanted to learn how Unity worked because I <strong class = "light">want to work in game development</strong>. I must admit, it was quite a challenge. I had prior Java knowledge, but no concept whatsoever as to how a game engine worked. To accomplish my task, I had to look up countless
+                    resources regarding how <strong class = "red">C# interfaced with Unity</strong>, and how the game engine analyzed the scripts. This meant I had to self-learn a <strong class = "light">new library</strong>, but this wasn't an issue for me.
+                </li>
+                <li class = "content">This was by far the <strong class = "light">most challenging</strong> project I ever attempted. However, I am proud of the fact that I was able to make an <strong class = "red">interactable game</strong>, and one that sported some unique features from other chess emulators, like Chess.com.</li>
+            </ul>
+            <ul>
+            </br></br><li class ="comment">// Usage</li>
+            <li class = "content">By launching chess.exe, the game is playable with <strong class = "red">white moving first</strong>.</li>
+        </ul>
+        </div>
+    </div>
+    <div class = "screenshots">
+        <!-- <ul>
+            <li><img src = "files/discordle/guess.jpg"></img></li>
+            <li><img src = "files/discordle/guesses.jpg"></img></li>
+            <li><img src = "files/discordle/stats.jpg"></img></li>
+        </ul> -->
+    </div>
+    <div class = "spacer">Made with 🤍 by Logan Calder</br><span class = "comment">Inspired by iuri.is </span><a href="https://iuri.is/" target="_blank">// Visit Here</a></div>
+</body>
+
+<body>
+    <nav>
+        <div class="icon">
+            <div class="menuButton">
+                <button class="button" onclick="showMenu()">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+            </div>
+            <script>
+                function showMenu(){
+                    let dropMenu = document.getElementById("mobileMenu");
+                    dropMenu.classList.toggle("active");   
+                                 
+                }
+            </script>
+            <div class="nav-list" id = "mobileMenu">
+                <div class = "menuPart">
+                    <a href="index" class = "home">.home()</a>
+                </div>
+                <div class = "menuPart">
+                    <a href="about" class = "about" id = "gray">.about()</a>
+                </div>
+                <div class = "menuPart">
+                    <a href="projects" class = projects>.projects()</a>
+                </div>
+                <div class = "socials">
+                    <div class = "menuPart">            
+                        <a href="https://github.com/logancalder" id = "github" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+                    </div>
+                    <div class = "menuPart">
+                        <a href="https://www.linkedin.com/in/logan-calder-425a2124a/" id = "linkedin" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>.discordle()</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/92c2b5b560.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <style>
+        body{
+            min-height:100vh;
+            width:100%;
+            background.position: center;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+    <div class ="bar">
+        <div class ="loading"></div>
+    </div>
+    <div class ="header-bg">
+        <div class ="bg"></div>
+    </div>
+
+    <section class ="header">
+        
+        <!-- Navigation menu -->
+
+        <nav>
+            <p href="index">.discordle()</p>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index">.home()</a></li>
+                    <li><a href="about" id = "gray">.about()</a></li>
+                    <li><a href="projects" id = "red">.projects()</a></li>
+                    <li><a href="https://github.com/logancalder" target="_blank"><i class="fa-brands fa-github icon-2x" style="font-size: 30px;"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/logan-calder-425a2124a/" target="_blank"><i class="fa-brands fa-linkedin icon-2x" style="font-size: 30px;"></i></a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </section>
+        
+        
+    </section>
+    <div class = "project-page-grid">
+        <h1 class = "project-page-header">.discordle<span class = "red">()</h1>
+        <div class = "project-page-description">
+            <ul>
+                <li class ="comment">String lang = "py";</li>
+                <li class ="comment">// Description</li>
+                <li class = "content"><strong class = "red">Discordle</strong> is an entertainment bot that focuses on <strong class = "light">recreating the popular game Wordle</strong> within Discord.</li>
+                <li class = "content">This bot allows for user to play daily <strong class = "light">Discordle</strong> games and compete with their friends. The bot also removes guesses from chat, so that other users may not see
+                    what the word is prior to their own discovery.
+                </li>
+                <li class = "content">This bot is <strong class = "red"> not</strong> available for public access.</li>
+            </ul>
+            <ul>
+                </br></br><li class ="comment">// Features</li>
+                <li class = "content">This bot's features are dedicated towards recreating the <italic class = "light">New York Times</italic> popular game, <strong class = "red">Wordle</strong>.</li>
+                </br><li class = "features-list">
+                    <ul>
+                        <li>6 Word Guesses</li>
+                        <li>Display Letter Positions</li>
+                        <li>View User Statistics</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <ul>
+                </br></br><li class ="comment">// Development</li>
+                <li class = "content">This project began back in <strong class = "light">February</strong> when I first played Wordle, which was just gaining popularity at the time. After playing the game, I thought to myself, "this can't be that hard to code." 
+                    Alas, it was <strong class = "light">not as easy</strong> as I expected.</li>
+                <li class = "content">I set to work on this project shortly after, and began thinking of ways to recreate the game. I eventually settled on converting a <strong class = "light">5 letter string to a list</strong>, and looping through it to test for letter positions. From there,
+                    I would simply assign an empty list an emoji varying in color, depending on if the user's guessed letter was in the right position. That list would then simply be <strong class = "red">printed in an embed</strong>, and displayed to the user.</li>
+                <li class = "content">While this project does work fairly well, it <strong class = "light">does have its drawbacks</strong>. For starters, the user's guesses <span class = "comment">/* Up to all 6 of them */</span> may be viewed in the chat in which they are guessing. So, while the 
+                original guess is removed, all previous ones and their letter locations <strong class = "light">may be viewed</strong>. If I were to revisit this project, I would most likely change the bot to work in <strong class = "red">private messaging</strong> rather than in public chats. This is a decently simple solution to do,
+            but since my project only ended up getting used by a few of my friends, I was <strong class = "light">content with how it worked</strong> for now.</li>
+            </ul>
+            <ul>
+            </br></br><li class ="comment">// Usage</li>
+            <li class = "content">This bot utilizes the prefix <strong class = "red">!w {message}</strong>.</li>
+        </ul>
+        </div>
+    </div>
+    <div class = "screenshots">
+        <ul>
+            <li><img src = "files/discordle/guess.jpg"></img></li>
+            <li><img src = "files/discordle/guesses.jpg"></img></li>
+            <li><img src = "files/discordle/stats.jpg"></img></li>
+        </div>
+    </li>
+    <div class = "spacer">Made with 🤍 by Logan Calder</br><span class = "comment">Inspired by iuri.is </span><a href="https://iuri.is/" target="_blank">// Visit Here</a></div>
+</body>
+
+<body>
+    <nav>
+        <div class = "overlay"></div>
+        <div class="icon">
+            <div class="menuButton">
+                <button class="button" onclick="showMenu()">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+            </div>
+            <script>
+                function showMenu(){
+                    let dropMenu = document.getElementById("mobileMenu");
+                    dropMenu.classList.toggle("active");   
+                    var overlay = document.querySelector('.overlay');
+                    overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';               
+                }
+            </script>
+            
+            <div class="nav-list" id = "mobileMenu">
+                <div class = "menuPart">
+                    <a href="" class = "home">.home()</a>
+                </div>
+                <div class = "menuPart">
+                    <a href="about" class = "about" id = "gray">.about()</a>
+                </div>
+                <div class = "menuPart">
+                    <a href="projects" class = projects>.projects()</a>
+                </div>
+                <div class = "socials">
+                    <div class = "menuPart">            
+                        <a href="https://github.com/logancalder" id = "github" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+                    </div>
+                    <div class = "menuPart">
+                        <a href="https://www.linkedin.com/in/logan-calder-425a2124a/" id = "linkedin" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

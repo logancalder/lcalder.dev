@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>.hpe()</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/92c2b5b560.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <style>
+        body{
+            min-height:100vh;
+            width:100%;
+            background.position: center;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+    <div class ="bar">
+        <div class ="loading"></div>
+    </div>
+    <div class ="header-bg">
+        <div class ="bg"></div>
+    </div>
+
+    <section class ="header">
+        
+        <!-- Navigation menu -->
+
+        <nav>
+            <p href="index">.hpe()</p>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index">.home()</a></li>
+                    <li><a href="about" id = "gray">.about()</a></li>
+                    <li><a href="projects" id = "red">.projects()</a></li>
+                    <li><a href="https://github.com/logancalder" target="_blank"><i class="fa-brands fa-github icon-2x" style="font-size: 30px;"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/logan-calder-425a2124a/" target="_blank"><i class="fa-brands fa-linkedin icon-2x" style="font-size: 30px;"></i></a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </section>
+        
+        
+    </section>
+    <div class = "project-page-grid">
+        <h1 class = "project-page-header">.hpe<span class = "red">()</h1>
+        <div class = "project-page-description">
+            <ul>
+                <li class ="comment">String[] langs = "go", "py", "html", "css", "js";</li>
+                <li class ="comment">String location = "San Jose, CA";</li>
+                <li class ="comment">// Description</li>
+                <li class = "content">Over the summer of 2023, I was fortunate enough to intern at <strong class = "red">Hewlett Packard Enterprise</strong>, working as a software engineer in their <strong class = "red">Aruba Networks divison</strong>.</li>
+                <li class = "content">My work mainly consisted of <strong class = "light">memory</strong> and <strong class = "light">runtime bug fixes</strong>, as well as developing an <strong class = "light">interactable backend platform</strong> used by <strong class = "red">developers</strong>, <strong class = "red">sales engineers</strong>, <strong class = "red">customer service</strong>, and <strong class = "red">quality assurance workers</strong>.</li>
+                <li class = "content">Sadly, I cannot showcase my work as it was protected by HPE and confidential to the public. I will, however, go into detail of my internship experience, and what I learned along the way.</li>
+            </ul>
+            <ul>
+                </br></br><li class ="comment">// My Projects</li>
+                <li class = "content">My first project was to resolve unique device IDs and other data not properly being inserted into our Redis database. This had been leading to corrupted data, as well as excessive memory usage.</li>
+                <li class = "content">To fix this, I learned <strong class = "light">Golang</strong>---a language I had prior no knowledge of working with. I also picked up <strong class = "light">Docker</strong> and <strong class = "red">Kubernetes</strong> to manage image deployment, as well as <strong class = "light">Git</strong> through Jira's Bitbucket. I am pleased to say that I was able to resolve the issue, which in some instances conserved up to <strong class = "red">80%</strong> more memory.</li>
+                <li class = "content">My second project was to work on a fullstack application that would permit HPE employees to lookup & manage device data, such as IDs, paired devices, and routing information. Prior, the website that they had been using was dated, and extremely not user friendly. Searching for specific data had to be manually entered, or typed in with no aid from the website.</li>    
+                <li class = "content">Along with another intern, we managed to implement a <strong class = "light">user-friendly UI</strong> that automatically filled out redundant information, and would display device IDs in a more readable format.</li>
+            
+            <ul>
+                </br></br><li class ="comment">// Experience</li>
+                <li class = "content">My internship was not only extremely enjoyable and fun, but also highly benefitial for my programming knowledge & professional workplace experience. Some key takeaways that I got from my time at HPE were learning collaborative development and deployment, image scaling using Docker and Kubernetes, and <strong class = "light">fullstack developing by learning Golang and Javascript</strong>, as well as <strong class = "light">suplementing my pre-existing knowledge of Python, HTML, & CSS</strong>.</li>
+                <li class = "content">I greatly enjoyed working alongside experienced developers, and learning from their advice. I would now fully consider myself to be a much better programmer than I was before, coding more efficiently and professionally than I had prior. Since my time at HPE, I have been able to take my new skills back to personal projects and academic ones, leading groups in developing projects, as well as managing deployments to live products.</li>
+            </ul>
+        </div>
+    </div>
+    <div class = "screenshots">
+        <ul>
+            <li><img src = "files/hpe/group.jpg"></img></li>
+            <li><img src = "files/hpe/proj.jpeg"></img></li>
+            <li><img src = "files/hpe/logogroup.jpg"></img></li>
+            <li><img src = "files/hpe/view.jpg"></img></li>
+            <li><img src = "files/hpe/team.jpg"></img></li>
+            <li><img src = "files/hpe/coding.jpg"></img></li>
+        </div>
+    </li>
+    <div class = "spacer">Made with 🤍 by Logan Calder</br><span class = "comment">Inspired by iuri.is </span><a href="https://iuri.is/" target="_blank">// Visit Here</a></div>
+</body>
+<body>
+    <nav>
+        <div class = "overlay"></div>
+        <div class="icon">
+            <div class="menuButton">
+                <button class="button" onclick="showMenu()">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+            </div>
+            <script>
+                function showMenu(){
+                    let dropMenu = document.getElementById("mobileMenu");
+                    dropMenu.classList.toggle("active");   
+                    var overlay = document.querySelector('.overlay');
+                    overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';               
+                }
+            </script>
+            
+            <div class="nav-list" id = "mobileMenu">
+                <div class = "menuPart">
+                    <a href="" class = "home">.home()</a>
+                </div>
+                <div class = "menuPart">
+                    <a href="about" class = "about" id = "gray">.about()</a>
+                </div>
+                <div class = "menuPart">
+                    <a href="projects" class = projects>.projects()</a>
+                </div>
+                <div class = "socials">
+                    <div class = "menuPart">            
+                        <a href="https://github.com/logancalder" id = "github" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+                    </div>
+                    <div class = "menuPart">
+                        <a href="https://www.linkedin.com/in/logan-calder-425a2124a/" id = "linkedin" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

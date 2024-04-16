@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>.nexus()</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/92c2b5b560.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <style>
+        body{
+            min-height:100vh;
+            width:100%;
+            background.position: center;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+    <div class ="bar">
+        <div class ="loading"></div>
+    </div>
+    <div class ="header-bg">
+        <div class ="bg"></div>
+    </div>
+
+    <section class ="header">
+        
+        <!-- Navigation menu -->
+
+        <nav>
+            <p href="index">.nexus()</p>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index">.home()</a></li>
+                    <li><a href="about" id = "gray">.about()</a></li>
+                    <li><a href="projects" id = "red">.projects()</a></li>
+                    <li><a href="https://github.com/logancalder" target="_blank"><i class="fa-brands fa-github icon-2x" style="font-size: 30px;"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/logan-calder-425a2124a/" target="_blank"><i class="fa-brands fa-linkedin icon-2x" style="font-size: 30px;"></i></a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </section>
+        
+        
+    </section>
+    <div class = "project-page-grid">
+        <h1 class = "project-page-header">.nexus<span class = "red">()</h1>
+        <div class = "project-page-description">
+            <ul>
+                <li class ="comment">String lang = "py";</li>
+                <li class ="comment">// Description</li>
+                <li class = "content"><strong class = "red">Nexus</strong> is a moderation bot applicable in Discord that eases <strong class = "light">administration-side actions and activities</strong>.</li>
+                <li class = "content">This bot reduces the workload on server administrators and moderators. By employing features such as <strong class = "red">chat filters</strong>, <strong class = "red">embed generators</strong>,
+                     and <strong class = "red">automatic role assignment</strong>, admins may simply configure the bot to their liking to make it work efficiently with their server.
+                </li>
+                <li class = "content">This bot is <strong class = "red"> not</strong> available for public access, but you may <strong class = "light">contact me </strong> if you are interested in a clone for your own 
+                    server <a href = "mailto:lcalder2022@gmail.com" target = "_blank"><i class="fa-solid fa-envelope" id = "red"></i></a></li>
+            </ul>
+            <ul>
+                </br></br><li class ="comment">// Features</li>
+                <li class = "content">This bot's features are dedicated towards auto-moderation and administration features.</li>
+                </br><li class = "features-list">
+                    <ul>
+                        <li>Chat Filters</li>
+                        <li>Embed Generators</li>
+                        <li>Role Assignment</li>
+                        <li>Infraction & Warning System</li>
+                        <li>Mandated Rule Acceptance</li>
+                        <li>Automatic Invite Link Generation</li>
+                        <li>Chat Clearing</li>
+                        <li>Quote Generator</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <ul>
+                </br></br><li class ="comment">// Development</li>
+                <li class = "content">This project was my take on a <strong class = "light">back-end Discord bot</strong>. With most bots now-adays being aimed towards user entertainment, I wanted to create a program that would aid the people creating that experience. As such,
+                    I created <strong class = "red">Nexus</strong>, which would aim to lessen the workload of administrators and moderation actions.
+                </li>
+                <li class = "content">I began this project back in <strong class = "light">April of 2020</strong>, but continued adding to it through <strong class = "light">May of 2022</strong>. This was the first Discord bot I ever developed, so I had to learn how the <strong class = "red">discord.py</strong> library worked, as well as Discord bot hosting.
+                    Coming out of it, I feel I learned some really good skills in coding, as well as cloud hosting.
+                </li>
+                <li class = "content">When it came to putting my bot on a server <span class = "comment">/* Prior to configuring Raspberry Pi hosting */</span> I utilized services such as <strong class = "red">Heroku</strong> and <strong class = "red">Repl.it</strong> to host my bot.</li>
+            </ul>
+            <ul>
+            </br></br><li class ="comment">// Usage</li>
+            <li class = "content">This bot utilizes the prefix <strong class = "red">?{message}</strong>.</li>
+            <li class = "content"><strong class = "light">To learn more </strong>about the individual commands that this bot offers, run the command <strong class = "red">?help</strong>.</li>
+        </ul>
+        </div>
+    </div>
+    <div class = "screenshots">
+        <ul>
+            <li><img src = "files/nexus/welcome.jpg"></img></li>
+            <li><img src = "files/nexus/cre.jpg"></img></li>
+            <li><img src = "files/nexus/gre.jpg"></img></li>
+            <li><img src = "files/nexus/help.jpg"></img></li>
+            <li><img src = "files/nexus/infractions.jpg"></img></li>
+            <li><img src = "files/nexus/quote.jpg"></img></li>
+        </div>
+    </li>
+    <div class = "spacer">Made with 🤍 by Logan Calder</br><span class = "comment">Inspired by iuri.is </span><a href="https://iuri.is/" target="_blank">// Visit Here</a></div>
+</body>
+<body>
+    <nav>
+        <div class = "overlay"></div>
+        <div class="icon">
+            <div class="menuButton">
+                <button class="button" onclick="showMenu()">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+            </div>
+            <script>
+                function showMenu(){
+                    let dropMenu = document.getElementById("mobileMenu");
+                    dropMenu.classList.toggle("active");   
+                    var overlay = document.querySelector('.overlay');
+                    overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';               
+                }
+            </script>
+            
+            <div class="nav-list" id = "mobileMenu">
+                <div class = "menuPart">
+                    <a href="" class = "home">.home()</a>
+                </div>
+                <div class = "menuPart">
+                    <a href="about" class = "about" id = "gray">.about()</a>
+                </div>
+                <div class = "menuPart">
+                    <a href="projects" class = projects>.projects()</a>
+                </div>
+                <div class = "socials">
+                    <div class = "menuPart">            
+                        <a href="https://github.com/logancalder" id = "github" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+                    </div>
+                    <div class = "menuPart">
+                        <a href="https://www.linkedin.com/in/logan-calder-425a2124a/" id = "linkedin" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

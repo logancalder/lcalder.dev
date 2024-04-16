@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>.home()</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/92c2b5b560.js" crossorigin="anonymous"></script>
+
+    <style>
+        
+
+    </style>
+    <meta charset="UTF-8">
+</head>
+
+<!-- Typing home page starts -->
+
+<body id="bod">
+
+    <!-- Header Begins -->
+
+    <section class ="header">
+
+        <!-- Loading Bar @ top of screen -->
+
+        <div class ="bar">
+            <div class ="loading"></div>
+        </div>      
+        <div class ="header-bg">
+            <div class ="bg"></div>
+        </div>
+        <!-- Nav Bar -->
+
+        <nav>
+            
+            <div class = "home">
+                <p href="index">.home()</p>
+            </div>
+            
+            <div class="nav-links">
+                <ul>
+                    <li><span id = "red">.home()</span></li>
+                    <li><a href="about" id="gray">.about()</a></li>
+                    <li><a href="projects">.projects()</a></li>
+                    <li><a href="https://github.com/logancalder" target="_blank"><i class="fa-brands fa-github icon-2x" style="font-size: 30px;"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/logan-calder-425a2124a/" target="_blank"><i class="fa-brands fa-linkedin icon-2x" style="font-size: 30px;"></i></a></li>
+                </ul>
+            </div>
+            
+        </nav>
+
+    <div class = "typed-name">
+        <div class="container"> 
+            <div class="typed-out">
+                Logan Calder
+            </div>
+        </div>
+    </div>
+    
+        <center>
+            <div class="description">Computer Science Student @ SCU</div>
+        </center></div>
+    <!-- Animated Typing of name & bio -->
+    <div id="particles-js">
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
+    </div>
+    </section>
+
+    
+
+    <!-- particles.js -->
+    
+    
+
+    <!-- Particles stop rendering here -->
+
+    <!-- Start of projects section -->
+
+    <div class ="certifications" id="bod">
+        <p id = "head">About Me</p>
+        <p id="desc">Below are some facts about me and my experience in the Computer Science field.</p>
+        <div class ="descriptions">
+            <div class ="bio">
+                <i class="fa-solid fa-graduation-cap fa-3x"></i>
+                <p id = "top">Current Student @ SCU</p>
+                <p id = "desc">B.S. Computer Science</p>
+                <p id = "desc">2022 - 2025</p>
+            </div>
+            <div class ="bio">
+                <i class="fa-solid fa-chalkboard-user fa-3x"></i>
+                <p id = "top">Research Assistant</p>
+                <p id = "desc">High-Performance Computing Tuning</p>
+                <p id = "desc">2023 - Pres.</p>
+            </div>
+            <div class ="bio">
+                <i class="fa-solid fa-code fa-3x"></i>
+                <p id = "top">Software Engineer</p>
+                <p id = "desc">Intern @ HPE</p>
+                <p id = "desc">June - Oct. 2023</p>
+            </div>
+        </div>
+    </div> 
+
+    <div class = "spacer">Made with 🤍 by Logan Calder</br><span class = "comment">Inspired by iuri.is </span><a href="https://iuri.is/" target="_blank">// Visit Here</a></div>
+
+</body>
+<body>
+    <nav>
+        <div class = "overlay"></div>
+        <div class="icon">
+            <div class="menuButton">
+                <button class="button" onclick="showMenu()">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+            </div>
+            <script>
+                function showMenu(){
+                    let dropMenu = document.getElementById("mobileMenu");
+                    dropMenu.classList.toggle("active");   
+                    var overlay = document.querySelector('.overlay');
+                    overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';               
+                }
+            </script>
+            
+            <div class="nav-list" id = "mobileMenu">
+                <div class = "menuPart">
+                    <a href="" class = "home">.home()</a>
+                </div>
+                <div class = "menuPart">
+                    <a href="about" class = "about" id = "gray">.about()</a>
+                </div>
+                <div class = "menuPart">
+                    <a href="projects" class = projects>.projects()</a>
+                </div>
+                <div class = "socials">
+                    <div class = "menuPart">            
+                        <a href="https://github.com/logancalder" id = "github" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+                    </div>
+                    <div class = "menuPart">
+                        <a href="https://www.linkedin.com/in/logan-calder-425a2124a/" id = "linkedin" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
